@@ -1,0 +1,46 @@
+$margin-around:  10px;
+a {
+  text-decoration: none;
+  color: rgb(53, 53, 53)
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mail-link {
+  margin: $margin-around;
+}
+
+.images-link {
+  margin: $margin-around;
+}
+
+.popup {
+  margin: $margin-around;
+}
+
+.notification {
+  margin: $margin-around;
+}
+
+.account {
+  width: 32px;
+  height: 32px;
+  margin: $margin-around;
+  border-radius: 15px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 2;
+  background-color: rgba(105, 105, 245, 0.986)
+}
+.popup__checkbox {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+input[type=checkbox]:checked + .popup {
+  background-color: aqua
+}

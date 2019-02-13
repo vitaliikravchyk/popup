@@ -1,0 +1,48 @@
+a {
+  text-decoration: none;
+  color: #353535; }
+
+header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.mail-link {
+  margin: 10px; }
+
+.images-link {
+  margin: 10px; }
+
+.popup {
+  margin: 10px; }
+
+.notification {
+  margin: 10px; }
+
+.account {
+  width: 32px;
+  height: 32px;
+  margin: 10px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 2;
+  background-color: rgba(105, 105, 245, 0.986); }
+
+.popup__checkbox {
+  position: relative;
+  left: 0;
+  top: 0; }
+
+input[type=checkbox]:checked + .popup {
+  background-color: aqua; }
