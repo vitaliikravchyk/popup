@@ -1,4 +1,9 @@
 $margin-around:  10px;
+ul {
+  
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
   color: rgb(53, 53, 53)
@@ -7,23 +12,31 @@ a {
 header {
   display: flex;
   justify-content: flex-end;
+}
+
+.app-list {
+  display: flex;
   align-items: center;
 }
 
-.mail-link {
+.mail {
   margin: $margin-around;
 }
 
-.images-link {
+.images {
   margin: $margin-around;
 }
 
 .popup {
-  margin: $margin-around;
+  display: flex;
+  align-items: center;
 }
 
 .notification {
   margin: $margin-around;
+}
+
+.drop-menu {
 }
 
 .account {
@@ -36,11 +49,29 @@ header {
   line-height: 2;
   background-color: rgba(105, 105, 245, 0.986)
 }
+
 .popup__checkbox {
   position: relative;
-  left: 0;
-  top: 0;
+  width: 0px;
+  height: 0px;
 }
-input[type=checkbox]:checked + .popup {
-  background-color: aqua
+
+.popup__label {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  background-image: url(../img/popup_icon.svg);
+  background-size: 30px;
+}
+
+.popup__label:hover {
+  border: 0.5px solid rgb(94, 94, 255)
+}
+
+.popup__checkbox:checked ~ .drop-menu {
+  display: flex;
+  position: absolute;
+  top: 70px;
+  background-color: aqua;
 }

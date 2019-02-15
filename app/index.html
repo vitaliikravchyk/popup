@@ -9,14 +9,30 @@
 </head>
 <body>
   <header>
-    <a href="gmail" class="mail-link">Gmail</a>
-    <a href="images" class="images-link">Images</a>
-    <label for="popup" class="popup">
-      <img src="./img/popup_icon.svg" alt="">
-    </label>
-    <input type="checkbox" name="popup" id="popup" class="popup__checkbox">
-    <a href="notification" class="notification"><img src="./img/notification_icon.png" alt=""></a>
-    <a href="account" class="account">B</a>
+    <ul class="app-list">
+      <li class="mail">
+        <a href="gmail">Gmail</a>
+      </li>
+      <li class="images">
+        <a href="images">Images</a>
+      </li>
+      <li class="popup">
+        <input type="checkbox" name="popup" id="popup__checkbox" class="popup__checkbox" tabindex="-1">
+        <label for="popup__checkbox" tabindex="0" class="popup__label">
+        </label>
+        <ul class="drop-menu">
+          <li>G</li>
+        </ul>
+      </li>
+      <li class="notification">
+        <a href="notification">
+          <img src="./img/notification_icon.png" alt="">
+        </a>
+      </li>
+      <li class="account">
+        <a href="account">B</a>
+      </li>
+    </ul>
   </header>
   <script src="js/main.js"></script>
 </body>
