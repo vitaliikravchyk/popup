@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 ul, input {
   appearance: none;
   margin: 0;
@@ -46,11 +45,19 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 
+	.popup__label {
+		position: relative;
+	}
+	
   .popup__checkbox {
 
     &:checked ~ .wrapper .drop-menu {
       display: flex;
-    }
+		}
+
+		&:checked ~ .wrapper::before {
+			content: '';
+		}
 
     width: 30px;
     height: 30px;
@@ -61,7 +68,6 @@ header {
 .wrapper {
 
   &::before {
-    content: '';
     border-top: 1px solid;
     border-left: 1px solid;
     border-color: rgba(0,0,0,.2);
@@ -75,7 +81,8 @@ header {
   }
 
   position: absolute;
-  top: 70px;
+	top: 70px;
+	right: -135px;
 }
 
 .drop-menu {
