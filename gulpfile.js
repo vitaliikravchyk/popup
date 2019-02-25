@@ -90,7 +90,7 @@ gulp.task("clean", function() {
 gulp.task("build", gulp.series("clean", gulp.parallel("html", "scss", "img", "scripts", "fonts")));
 
 gulp.task('watch', function () {
-	gulp.watch(['app/**/*.html', 'app/scss/**/*.scss', 'app/img/**/*.*', 'app/fonts/**/*.*'], gulp.series('build'))
+	gulp.watch(['app/**/*.html', 'app/scss/**/*.scss'], gulp.series('build'))
 });
 
 
